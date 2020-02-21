@@ -1,1 +1,27 @@
 
+According to Bayes Theorem
+P(A|B) = P(B|A) P(A)
+P(B)
+Applying the same to find probability of a coin flipped is fair given tail
+P(F|T)= P(T|F)* P(F)/P(T|F)P(F) + P(T|B) P(B)
+P(F|T) = probability of a coin flipped is fair given tail.
+P(T|F) = probability that tail will occur given coin is fair
+P(F) = probability that fair coin is picked.
+P(T|B) = = probability that tail will occur given coin is bias
+P(B) = probability that bias coin is picked
+Given:
+P(T|F) = 0.5
+P(F)= 0.5
+P(T|B)=0.75
+P(B)=0.25
+P(F|T) = 0.5 *0.5 = 0.4
+(0.5*0.5)+(0.75*0.5)
+Probability that the randomly picked coin is fair that flip produced a tail is = 0.4 = 40%
+
+By Bayes Theorem we can derive the same for P(F|TT) as shown below
+P(F|TT)= P(TT|F)*P(F)/P(TT)
+P(F|TT)= P(T,T|F)*P(F)/P(T|T)P(F|T)+P(T|T)P(B|T)
+Probability of getting two tails flips for a fair coin is 0.5*0.5 = 0.25
+0.25*0.5 = 0.30769= 30.769%
+(0.25*0.5)+((0.75*0.75)*0.5)
+Probability that the randomly picked coin is fair that when flipped twice produced tail is 0.3.76 or 30%
