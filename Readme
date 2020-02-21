@@ -1,4 +1,9 @@
+Finding out if a coin is biased or not.
+You have a large jar containing many coins. Half of the coins are fair (denoted F) and 
+the other half are biased towards tail (denoted B). With a biased coin, you would flip a tail in 3 out of 4 cases.
 
+
+probability that a randomly picked coin is fair given that the first flip produced a tail
 According to Bayes Theorem
 P(A|B) = P(B|A) P(A)
 P(B)
@@ -18,6 +23,7 @@ P(F|T) = 0.5 *0.5 = 0.4
 (0.5*0.5)+(0.75*0.5)
 Probability that the randomly picked coin is fair that flip produced a tail is = 0.4 = 40%
 
+the probability of the coin to be fair is now when we fipped tail two times
 By Bayes Theorem we can derive the same for P(F|TT) as shown below
 P(F|TT)= P(TT|F)*P(F)/P(TT)
 P(F|TT)= P(T,T|F)*P(F)/P(T|T)P(F|T)+P(T|T)P(B|T)
@@ -25,3 +31,12 @@ Probability of getting two tails flips for a fair coin is 0.5*0.5 = 0.25
 0.25*0.5 = 0.30769= 30.769%
 (0.25*0.5)+((0.75*0.75)*0.5)
 Probability that the randomly picked coin is fair that when flipped twice produced tail is 0.3.76 or 30%
+
+
+Python program checks for each coin flip, coin being biased using the same principles as Bayes theorem it will calculate the posterior based on likelihood, prior and evidence provided.
+Initially prior will be the chances of picking a bias coin from a jug is always 0.5 as it also contains fair coins.
+Likelihood of head coming up for a biased coin is taken as 0.25 as given in task 1
+Likelihood of tail coming up for a biased coin is taken as 0.75 as given in task1
+Applying these we can calculate the evidence.
+Once posterior is calculated, prior will be updated with the posterior which was calculated before for every coin flip.
+According to graph we can see that the probability of the coin when flipped is more towards fair coin than bias coin after 12 experiments.
